@@ -1,394 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chayim Cleaning Services — Living clean</title>
-  <meta name="description"
-    content="Chayim Cleaning Services — residential, office, and deep cleaning that gives your space its life back.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bams.tech — Full-Stack Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <div class="grain" aria-hidden="true"></div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="grid-bg"></div>
 
-  <header class="site-header">
-    <div class="wrap header-row">
-      <a class="brand" href="#top">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M20 4C20 4 8 17.5 8 25.5C8 32.4036 13.3726 36 20 36C26.6274 36 32 32.4036 32 25.5C32 17.5 20 4 20 4Z"
-              stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" />
-            <path d="M14 26C14 29.5 16.5 31.5 20 31.5" stroke="currentColor" stroke-width="2.2"
-              stroke-linecap="round" />
-          </svg>
-        </span>
-        <span class="brand-text">
-          <span class="brand-name">Chayim</span>
-          <span class="brand-sub">Cleaning Services</span>
-        </span>
-      </a>
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Bams<span>.tech</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#stack">Stack</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-status">
+    <div class="status-dot"></div>
+    available for hire
+  </div>
+</nav>
 
-      <nav class="site-nav" aria-label="Primary">
-        <a href="#services">Services</a>
-        <a href="#process">Process</a>
-        <a href="#why">Why Chayim</a>
-        <a href="#reviews">Reviews</a>
-      </nav>
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">Full-Stack Developer· Back-End Focused</div>
+    <h1 class="hero-name">BAMS<br><span class="accent">Tech</span></h1>
+    <div class="hero-domain">bams<span class="tld">.tech</span></div>
+    <p class="hero-bio">
+      I architect and build robust, scalable back-end systems — APIs, databases, server
+      infrastructure — then connect them to clean, functional interfaces. Obsessed with
+      performance, reliability, and code that survives production.
+    </p>
+    <div class="hero-ctas">
+      <a href="#projects" class="btn-primary">→ View Projects</a>
+      <a href="#contact" class="btn-outline">Let's Work Together</a>
+    </div>
+  </div>
 
-      <a class="btn btn-small btn-primary header-cta" href="#quote">Get a quote</a>
+  <div class="hero-terminal">
+    <div class="terminal-bar">
+      <div class="dot r"></div>
+      <div class="dot y"></div>
+      <div class="dot g"></div>
+      <span class="terminal-title">bams@server ~ zsh</span>
+    </div>
+    <div class="terminal-body">
+      <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd">whoami</span></div>
+      <div class="t-out hi">bams — full-stack Developer</div>
+      <br>
+      <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd">cat focus.txt</span></div>
+      <div class="t-out gr">→ Back-end architecture</div>
+      <div class="t-out gr">→ REST &amp; GraphQL APIs</div>
+      <div class="t-out gr">→ Database design</div>
+      <div class="t-out gr">→ Cloud infrastructure</div>
+      <br>
+      <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd">uptime</span></div>
+      <div class="t-out">3+ yrs · 10+ projects shipped</div>
+      <br>
+      <div class="t-line"><span class="t-prompt">❯</span><span class="t-comment"># available for new projects</span></div>
+      <div class="t-line"><span class="t-prompt">❯</span><span class="blink"></span></div>
+    </div>
+  </div>
 
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    Scroll to explore
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div class="full-divider"></div>
+<section id="about">
+  <div class="section-header reveal">
+    <span class="section-num">01 /</span>
+    <h2 class="section-title">About</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>I'm a <strong>full-stack Developer with a deep back-end specialization</strong>. I spend most
+         of my time designing <span class="hi">high-performance APIs</span>, building reliable
+         server-side logic, and architecting databases that scale without complaint.</p>
+      <p>My front-end work is clean and functional — I build interfaces that serve users well
+         without getting in the way of the systems underneath. I believe the best UX often
+         starts with excellent back-end design.</p>
+      <p>I've shipped production systems in Node.js and Python — from MVP to scaled infrastructure.
+         Whether it's a <strong>multi-tenant SaaS back-end</strong>, a
+         <span class="hi">real-time event pipeline</span>, or a cloud deployment on AWS, I care
+         deeply about the craft at every layer.</p>
+    </div>
+    <div class="about-stats reveal">
+      <div class="stat-cell">
+        <div class="stat-num">3<span>+</span></div>
+        <div class="stat-label">Years of experience</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">20<span>+</span></div>
+        <div class="stat-label">Projects shipped</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">8<span>+</span></div>
+        <div class="stat-label">Technologies mastered</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">100<span>%</span></div>
+        <div class="stat-label">Uptime obsession</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STACK -->
+<div class="full-divider"></div>
+<section id="stack">
+  <div class="section-header reveal">
+    <span class="section-num">02 /</span>
+    <h2 class="section-title">Tech Stack</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="stack-grid reveal">
+
+    <!-- Back-End -->
+    <div class="stack-cat">
+      <div class="stack-cat-label">Back-End</div>
+      <div class="stack-items">
+        <div class="stack-item primary" data-fill="95">Node.js / Express <div class="bar"><div class="bar-fill"></div></div></div>
+        <div class="stack-item"        data-fill="82">REST API Design     <div class="bar"><div class="bar-fill"></div></div></div>
+        <div class="stack-item"        data-fill="75">GraphQL             <div class="bar"><div class="bar-fill"></div></div></div>
+        <div class="stack-item"        data-fill="70">PostMan             <div class="bar"> <div class="bar-fill"></div></div> </div>
+                <div class="stack-item" data-fill="70">Ruby on Rails API <div class="bar">
+                    <div class="bar-fill"></div>
+                  </div>
+                </div>
+                <div class="stack-item" data-fill="70">Redis <div class="bar">
+                    <div class="bar-fill"></div>
+                  </div>
+                </div>
+                <div class="stack-item" data-fill="70">dockerized <div class="bar">
+                    <div class="bar-fill"></div>
+                  </div>
+                </div>
+
+      </div>
     </div>
 
-    <div class="mobile-nav" id="mobileNav">
-      <a href="#services">Services</a>
-      <a href="#process">Process</a>
-      <a href="#why">Why Chayim</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#quote" class="btn btn-primary btn-small">Get a quote</a>
+    <!-- Database -->
+    <div class="stack-cat">
+      <div class="stack-cat-label">Database</div>
+      <div class="stack-items">
+        <div class="stack-item primary" data-fill="92">PostgreSQL         <div class="bar"><div class="bar-fill"></div></div></div>
+        <div class="stack-item primary" data-fill="85">MySQL / SQLite     <div class="bar"><div class="bar-fill"></div></div></div>
+        <div class="stack-item"        data-fill="80">MongoDB            <div class="bar"><div class="bar-fill"></div></div></div>
+      </div>
     </div>
-  </header>
 
-  <main id="top">
+    <!-- Infra & Frontend -->
+    <div class="stack-cat">
+      <div class="stack-cat-label">Infra &amp; Frontend</div>
+      <div class="stack-items">
+        <div class="stack-item primary" data-fill="88">AWS (EC2, S3, RDS)    <div class="bar"><div class="bar-fill"></div></div></div>
+        <div class="stack-item"        data-fill="78">JavaScript / HTML/CSS <div class="bar"><div class="bar-fill"></div></div></div>
+        <div class="stack-item"        data-fill="72">Git / GitHub          <div class="bar"><div class="bar-fill"></div></div></div>
+        <div class="stack-item"        data-fill="72">CI/CD <div class="bar"> <div class="bar-fill"></div></div></div>
+                    
 
-    <!-- HERO -->
-    <section class="hero wrap">
-      <p class="eyebrow">Chayim Cleaning Services</p>
-      <h1 class="hero-title">
-        <span class="line line-a">Living</span>
-        <span class="line line-b">Clean.</span>
-      </h1>
-      <p class="hero-sub">
-        <strong>Chayim</strong> means <em>life</em>. We think a space only really comes alive once it's
-        properly clean — so that's the whole job: homes, offices, move-outs, and everything after the mess,
-        handled by a team that shows up, does it right, and leaves the room feeling like it can breathe again.
-      </p>
-      <div class="hero-actions">
-        <a href="#quote" class="btn btn-primary">Get a free quote</a>
-        <a href="#services" class="btn btn-ghost">See what we clean <span aria-hidden="true">→</span></a>
       </div>
-
-      <div class="wipe-block">
-        <div class="wipe-panel" id="wipePanel" tabindex="0" role="img"
-          aria-label="Interactive before and after cleaning demonstration. Move your cursor or tap across the panel to reveal the clean side.">
-          <div class="wipe-layer wipe-after">
-            <span class="wipe-tag">after chayim</span>
-          </div>
-          <div class="wipe-layer wipe-before" id="wipeBefore">
-            <span class="wipe-tag">before</span>
-          </div>
-        </div>
-        <p class="wipe-caption"><span class="wipe-caption-desktop">Move your cursor across the panel</span><span
-            class="wipe-caption-mobile">Drag your finger across the panel</span> — that's the job, basically.</p>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section id="services" class="services wrap">
-      <div class="section-head">
-        <p class="eyebrow">What we clean</p>
-        <h2>Every space, treated like it matters.</h2>
-      </div>
-
-      <ul class="service-list">
-        <li class="service-row">
-          <span class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none">
-              <path d="M16 4c4 5 9 11.5 9 16.5A9 9 0 1 1 7 20.5C7 15.5 12 9 16 4Z" stroke="currentColor"
-                stroke-width="1.8" />
-            </svg>
-          </span>
-          <span class="service-copy">
-            <span class="service-name">Home Cleaning</span>
-            <span class="service-desc">Regular tidy-ups and deep cleans for the spaces you actually live in.</span>
-          </span>
-        </li>
-        <li class="service-row">
-          <span class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none">
-              <rect x="7" y="6" width="18" height="22" stroke="currentColor" stroke-width="1.8" />
-              <path d="M11 11h3M18 11h3M11 16h3M18 16h3M11 21h3M18 21h3" stroke="currentColor" stroke-width="1.8"
-                stroke-linecap="round" />
-            </svg>
-          </span>
-          <span class="service-copy">
-            <span class="service-name">Office &amp; Commercial</span>
-            <span class="service-desc">Spotless workplaces, scheduled around your business hours — not the other way
-              round.</span>
-          </span>
-        </li>
-        <li class="service-row">
-          <span class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none">
-              <path d="M6 26V12l10-6 10 6v14" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
-              <path d="M13 26v-8h6v8" stroke="currentColor" stroke-width="1.8" />
-            </svg>
-          </span>
-          <span class="service-copy">
-            <span class="service-name">Move-In / Move-Out</span>
-            <span class="service-desc">A fresh start for a new space, or a clean handover for the one you're
-              leaving.</span>
-          </span>
-        </li>
-        <li class="service-row">
-          <span class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none">
-              <path d="M6 24l7-7 4 4 9-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                stroke-linejoin="round" />
-              <path d="M6 24h20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-              <circle cx="13" cy="10" r="1.6" fill="currentColor" />
-              <circle cx="22" cy="14" r="1.6" fill="currentColor" />
-            </svg>
-          </span>
-          <span class="service-copy">
-            <span class="service-name">Post-Construction</span>
-            <span class="service-desc">Dust, debris, and residue cleared out so the build can finally be lived
-              in.</span>
-          </span>
-        </li>
-        <li class="service-row">
-          <span class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none">
-              <path d="M16 5v22M9 12l7-7 7 7M9 20l7 7 7-7" stroke="currentColor" stroke-width="1.8"
-                stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </span>
-          <span class="service-copy">
-            <span class="service-name">Deep Clean</span>
-            <span class="service-desc">The grout, the vents, the corners your weekly clean never quite reaches.</span>
-          </span>
-        </li>
-        <li class="service-row">
-          <span class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none">
-              <path d="M8 12a8 8 0 0 1 14-5.2M24 20a8 8 0 0 1-14 5.2" stroke="currentColor" stroke-width="1.8"
-                stroke-linecap="round" />
-              <path d="M22 5v4h-4M10 27v-4h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </span>
-          <span class="service-copy">
-            <span class="service-name">Recurring Maintenance</span>
-            <span class="service-desc">Weekly, biweekly, or monthly visits that keep pace with everyday life.</span>
-          </span>
-        </li>
-      </ul>
-    </section>
-
-    <!-- PROCESS -->
-    <section id="process" class="process">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow">How it works</p>
-          <h2>Four visits in one.</h2>
-        </div>
-
-        <ol class="process-steps">
-          <li class="step">
-            <span class="step-num">01</span>
-            <h3>Book</h3>
-            <p>Tell us your space, your schedule, and what "clean" means to you.</p>
-          </li>
-          <li class="step">
-            <span class="step-num">02</span>
-            <h3>Arrive &amp; assess</h3>
-            <p>Our team walks the space and confirms the plan before a single surface is touched.</p>
-          </li>
-          <li class="step">
-            <span class="step-num">03</span>
-            <h3>Clean</h3>
-            <p>Room by room, checklist by checklist — nothing skipped because we were in a hurry.</p>
-          </li>
-          <li class="step">
-            <span class="step-num">04</span>
-            <h3>Walkthrough</h3>
-            <p>You inspect with us before we call it finished. If something's off, we fix it then.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- WHY -->
-    <section id="why" class="why">
-      <div class="wrap">
-        <div class="section-head section-head-light">
-          <p class="eyebrow">Why Chayim</p>
-          <h2>Clean, the way life deserves.</h2>
-        </div>
-
-        <div class="why-grid">
-          <div class="why-card">
-            <h3>Care over shortcuts</h3>
-            <p>We clean every space like it's the one we go home to — not like a box to check off a list.</p>
-          </div>
-          <div class="why-card">
-            <h3>Nothing harsh, nothing hidden</h3>
-            <p>Products safe for kids, pets, and whoever breathes the air after we've gone.</p>
-          </div>
-          <div class="why-card">
-            <h3>Same team, every time</h3>
-            <p>You get to know the people you're handing a key to — and they get to know your space.</p>
-          </div>
-          <div class="why-card">
-            <h3>Insured &amp; background-checked</h3>
-            <p>Peace of mind is part of the service, not an upsell.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- REVIEWS -->
-    <section id="reviews" class="reviews">
-      <div class="section-head">
-        <p class="eyebrow">Reviews</p>
-        <h2>What it's like once we've been through.</h2>
-      </div>
-      <div class="marquee" id="marquee">
-        <div class="marquee-track">
-          <blockquote class="quote">
-            <p>"Chayim's crew treats our clinic like it's theirs. Patients notice — they always comment on how the place
-              smells and feels."</p>
-            <cite>— Front desk lead, family clinic</cite>
-          </blockquote>
-          <blockquote class="quote">
-            <p>"I've used three cleaning services in this apartment. Chayim is the first one that got under the stove
-              without me asking."</p>
-            <cite>— Homeowner, weekly client</cite>
-          </blockquote>
-          <blockquote class="quote">
-            <p>"We booked them for a post-construction clean and the site looked move-in ready by the end of the day."
-            </p>
-            <cite>— Site manager, small contractor</cite>
-          </blockquote>
-          <!-- duplicate set for seamless loop -->
-          <blockquote class="quote" aria-hidden="true">
-            <p>"Chayim's crew treats our clinic like it's theirs. Patients notice — they always comment on how the place
-              smells and feels."</p>
-            <cite>— Front desk lead, family clinic</cite>
-          </blockquote>
-          <blockquote class="quote" aria-hidden="true">
-            <p>"I've used three cleaning services in this apartment. Chayim is the first one that got under the stove
-              without me asking."</p>
-            <cite>— Homeowner, weekly client</cite>
-          </blockquote>
-          <blockquote class="quote" aria-hidden="true">
-            <p>"We booked them for a post-construction clean and the site looked move-in ready by the end of the day."
-            </p>
-            <cite>— Site manager, small contractor</cite>
-          </blockquote>
-        </div>
-      </div>
-      <p class="reviews-note">Sample reviews shown for layout — swap in real client quotes when you have them.</p>
-    </section>
-
-    <!-- QUOTE / CONTACT -->
-    <section id="quote" class="quote-section">
-      <div class="wrap quote-grid">
-        <div class="quote-info">
-          <p class="eyebrow">Get a quote</p>
-          <h2>Tell us about the space.</h2>
-          <p class="quote-copy">Send the basics and we'll get back to you with pricing and the next available slot —
-            usually the same day.</p>
-
-          <dl class="contact-list">
-            <div>
-              <dt>Phone</dt>
-              <dd><a href="tel:+2347065698140">+2347065698140</a></dd>
-            </div>
-            <div>
-              <dt>WhatsApp</dt>
-              <dd><a href="#" id="whatsappLink" target="_blank" rel="noopener">Chat with us</a></dd>
-            </div>
-            <div>
-              <dt>Email</dt>
-              <dd><a href="#" id="emailLink">hello@chayimcleaning.com</a></dd>
-            </div>
-            <div>
-              <dt>Hours</dt>
-              <dd>Mon – Sat, 8am – 6pm</dd>
-            </div>
-            <div>
-              <dt>Location</dt>
-              <dd></dd>
-            </div>
-          </dl>
-        </div>
-
-        <form class="quote-form" id="quoteForm" novalidate>
-          <div class="field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" autocomplete="name" required>
-          </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" autocomplete="email" required>
-          </div>
-          <div class="field">
-            <label for="service">Service</label>
-            <select id="service" name="service" required>
-              <option value="" disabled selected>Choose one</option>
-              <option>Home Cleaning</option>
-              <option>Office &amp; Commercial</option>
-              <option>Move-In / Move-Out</option>
-              <option>Post-Construction</option>
-              <option>Deep Clean</option>
-              <option>Recurring Maintenance</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="message">A little about the space</label>
-            <textarea id="message" name="message" rows="4"
-              placeholder="Size, rooms, how often you'd like us — anything helps."></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full">Request a quote</button>
-          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap footer-row">
-      <div class="footer-brand">
-        <span class="brand-name">Chayim</span>
-        <span class="footer-motto">Living Clean.</span>
-      </div>
-      <nav class="footer-nav" aria-label="Footer">
-        <a href="#services">Services</a>
-        <a href="#process">Process</a>
-        <a href="#why">Why Chayim</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#quote">Get a quote</a>
-      </nav>
-      <p class="footer-fine">© <span id="year"></span> Chayim Cleaning Services. Crafted by bams.tech.</p>
     </div>
-  </footer>
 
-  <a href="#" id="whatsappFloat" class="whatsapp-float" target="_blank" rel="noopener"
-    aria-label="Chat with Chayim on WhatsApp">
-    <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
-      <path
-        d="M16 4C9.373 4 4 9.373 4 16c0 2.42.71 4.673 1.933 6.567L4 28l5.6-1.876A11.93 11.93 0 0 0 16 28c6.627 0 12-5.373 12-12S22.627 4 16 4Z"
-        fill="currentColor" />
-      <path
-        d="M11.6 10.4c.28-.62.57-.63.83-.64l.71-.01c.23 0 .55-.09.86.66.33.8 1.11 2.77 1.21 2.97.1.2.17.44.03.7-.13.27-.2.43-.4.66-.2.24-.42.53-.6.71-.2.2-.41.42-.18.82.24.4 1.05 1.73 2.25 2.8 1.55 1.38 2.85 1.81 3.26 2.02.4.2.64.17.87-.1.24-.28 1.02-1.19 1.29-1.6.27-.4.54-.34.9-.2.37.13 2.35 1.11 2.76 1.31.4.2.67.3.77.47.1.17.1.98-.23 1.93-.33.94-1.92 1.85-2.64 1.96-.72.12-1.32.5-4.44-.92-3.75-1.7-6.11-5.83-6.29-6.1-.18-.27-1.5-2-1.5-3.83 0-1.82.94-2.7 1.28-3.07Z"
-        fill="#F6F3E8" />
-    </svg>
-  </a>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<!-- PROJECTS -->
+<div class="full-divider"></div>
+<section id="projects">
+  <div class="section-header reveal">
+    <span class="section-num">03 /</span>
+    <h2 class="section-title">Projects</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="projects-list reveal">
+
+    <a href="https://github.com/bams634472/-bams_my_Basecamp" class="project-item">
+      <div class="project-num">01</div>
+      <div class="project-info">
+        <div class="project-name">MyBaseCamp — Project Management API</div>
+        <div class="project-desc">
+        A project management and team collaboration tool inspired by Basecamp. The primary build (MyBaseCamp2) is a
+        Node.js/Express app using NeDB for storage, with bcryptjs for auth, multer for file uploads, EJS templating, and
+        session-based login — supporting file attachments, discussion threads, and role-based permissions. A parallel version
+        was built as a Ruby on Rails clone and deployed to AWS EC2 (Ubuntu 24.04, eu-north-1)
+        </div>
+        <div class="project-tags">
+          <span class="tag accent">Node.js</span>
+          <span class="tag accent">Express</span>
+          <span class="tag">NeDB</span>
+          <span class="tag">REST API</span>
+          <span class="tag">JavaScript</span>
+        </div>
+      </div>
+      <div class="project-arrow">↗</div>
+    </a>
+
+    <a href="https://github.com/bams634472/My-backend-yeld" class="project-item">
+      <div class="project-num">02</div>
+      <div class="project-info">
+        <div class="project-name">My_Yelp</div>
+        <div class="project-desc">
+        A Yelp-inspired review/local-business discovery app, deployed to AWS using Amplify. The setup runs on Node.js 18+, uses
+        GitHub for source control and CI/CD triggers, and is provisioned via the Amplify CLI on a free-tier AWS account.
+        </div>
+        <div class="project-tags">
+          <span class="tag accent">Node.js</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">AWS</span>
+          <span class="tag">GitHub / Git</span>
+          <span class="tag">Amplify CLI: npm install -g @aws-amplify/cli</span>
+          <span class="tag">React</span>
+          
+        </div>
+      </div>
+    </a>
+    <a href="https://github.com/bams634472/My-first_API-main" class="project-item">
+      <div class="project-num">03</div>
+      <div class="project-info">
+        <div class="project-name">Country API</div>
+        <div class="project-desc">
+        A personal learning project building a Node.js API from scratch, Standard
+        Node/Express-style project layout: server.js as the entry point, src/ for application code, .env.example for environment
+        config, and package.json/package-lock.json for dependencies — with server.log suggesting basic request/error logging is
+        in place. Given the name, it likely serves country-related data (e.g., country info, codes, currencies, or similar
+        reference data via REST endpoints).
+        </div>
+        <div class="project-tags">
+          <span class="tag accent">Node.js</span>
+          <span class="tag accent">Express</span>
+          <span class="tag">PostMan</span>
+          <span class="tag">REST API</span>
+          <span class="tag">JavaScript</span>
+        </div>
+      </div>
+      <div class="project-arrow">↗</div>
+    </a>
+    <a href="https://github.com/Ms4islam/SCHOOL-MANAGIMENT-SYSTEM" class="project-item">
+      <div class="project-num">04</div>
+      <div class="project-info">
+        <div class="project-name">School Management System </div>
+        <div class="project-desc">
+        A full-stack school ERP prototype built from a formal design document, implementing the foundational layer that every
+        other module depends on — fully working end-to-end from database to API to UI. Stack: Next.js (React, TypeScript,
+        Tailwind, React Query) frontend, Ruby on Rails API backend, PostgreSQL for storage, Redis for caching, all containerized
+        with Docker.
+        
+        The full design spec calls for a 19-module ERP (admissions, academics, finance, attendance, exams, library, hostel,
+        transport, CBT, payroll, communication, inventory, medical, visitor management, alumni) across 11 user roles —
+        realistically a multi-quarter build for a full team. This prototype delivers the core foundation as production-ready
+        functionality:
+        
+        Auth & RBAC — JWT authentication with full role/permission-based access control
+        Student & Staff management — full CRUD, search, pagination; staff creation links user + staff records
+        Academics — sessions, terms, classes, arms, and subjects
+        Attendance — bulk daily marking by class/arm
+        Exams & Results — score entry, weighted computation, grading, class ranking, report cards
+        Finance — invoice creation, payment recording, automatic status updates
+        Dashboard — live stats pulled directly from the database
+        Audit logging — every write action tracked
+        </div>
+        <div class="project-tags">
+          <span class="tag accent">Next.js</span>
+          <span class="tag accent">(React, TypeScript, Tailwind, React Query)</span>
+          <span class="tag">Ruby on Rails API</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Redis</span>
+          <span class="tag">dockerized</span>
+        </div>
+      </div>
+      <div class="project-arrow">↗</div>
+    </a>
+      <div class="project-arrow">↗</div>
+    
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<div class="full-divider"></div>
+<section id="contact">
+  <div class="section-header reveal">
+    <span class="section-num">04 /</span>
+    <h2 class="section-title">Contact</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="contact-wrap">
+    <div class="contact-left reveal">
+      <h3>Let's build something <span class="hi">solid.</span></h3>
+      <p>Have a project that needs serious back-end work? Looking for someone who thinks
+         in systems and ships in production? Let's talk.</p>
+      <div class="contact-links">
+        <a href="mailto:hello@bams.tech080@gmail.com" class="contact-link">
+          <span class="cl-icon">✉</span>
+          <span class="cl-label">Email</span>
+          hello@bams.tech
+        </a>
+        <a href="https://github.com/bamstech" target="_blank" class="contact-link">
+          <span class="cl-icon">⌥</span>
+          <span class="cl-label">GitHub</span>
+        https://github.com/bamstech
+        </a>
+        <a href="https://www.linkedin.com/in/samuel-bamidele-a2294334b" target="_blank" class="contact-link">
+          <span class="cl-icon">◈</span>
+          <span class="cl-label">LinkedIn</span>
+          linkedin.com/in/bamstech
+        </a>
+        <a href="https://twitter.com/bams_tech" target="_blank" class="contact-link">
+          <span class="cl-icon">◇</span>
+          <span class="cl-label">Twitter</span>
+          @bams_tech
+        </a>
+         <a href="https://wa.me/9040908327" target="_blank" class="contact-link">
+          <span class="cl-icon">◇</span>
+          <span class="cl-label">Watsup</span>
+          09040908327
+        </a>
+      </div>
+    </div>
+    <div class="contact-right reveal">
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">bams<span>.tech</span></div>
+  <div class="footer-copy">© <span id="year"></span> bams.tech · All rights reserved</div>
+</footer>
+
 </body>
-
+<script src="./app.js"></script>
 </html>
