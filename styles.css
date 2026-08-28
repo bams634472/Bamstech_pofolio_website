@@ -1,4 +1,4 @@
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+/* *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
   --bg:        #080c10;
@@ -7,7 +7,7 @@
   --border:    #1e2d3d;
   --green:     #00e5a0;
   --green-dim: #00b87d;
-  --blue:      #4da6ff;
+  /* --blue:      #4da6ff; */
   --orange:    #ff8c42;
   --text:      #c9d7e8;
   --text-dim:  #5d7a96;
@@ -615,4 +615,4 @@ footer {
   .stack-grid { grid-template-columns: 1fr; }
   footer { padding: 28px 24px; flex-direction: column; gap: 12px; text-align: center; }
   .scroll-hint { left: 24px; }
-}
+} */
